@@ -28,9 +28,9 @@ app.use((err, req, res, next) => {
     });
 });
 
-process.on("unhandledRejection", (err, promise) => {
-    if(err){
-        console.log(`Error: ${err.message}`);
-        app.close(() => process.exit(1));
-    }
-});
+// process.on("unhandledRejection", (err, promise) => {
+//     if(err){
+//         console.log(`Error: ${err.message}`);
+//         app.close(() => process.exit(1));
+//     }
+// });
